@@ -1,0 +1,25 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+
+	@interface UIColor(InterfaceColors)
+
+	+(UIColor *)phonePadHighlightColor;
+
+	@end
+
+	@implementation UIColor(InterfaceColors)
+
+	+(UIColor *)phonePadHighlightColor {
+		return [UIColor colorWithRed:152/255.0f green:167/255.0f blue:200/255.0f alpha:1.0f];
+	}
+
+	@end
+
+#endif
